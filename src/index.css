@@ -29,6 +29,8 @@ h2 {
   text-shadow: black 2px 2px;
 }
 
+
+
 /*Splash Screen*/
 .splash-hero {
   width: 100%;
@@ -36,6 +38,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: url('./assets/lightning-in-the-sea.jpg') no-repeat center center/cover;
 }
 
@@ -43,52 +46,33 @@ h2 {
   font-size: 4rem;
   margin-bottom: 2rem;
   font-family: 'Oswald', sans-serif;
-}
-
-.splash-container {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.splash-welcome {
   color: rgb(400,400,400);
+  text-align: center;
 }
 
 .splash-options {
   display: flex;
-  list-style: none;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.splash-options a, .splash-options a:visited, .splash-options a:active {
+
+.splash-button{
+  min-width: 200px;
+  text-align: center;
+  font-size: 1.4rem;
+  display: block;
+  background-color: rgba(255,255,255,0.2);
+  padding: 1rem  1rem;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
   color: white;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
 }
 
-.splash-search-tool {
-  background-color: rgba(255,255,255,0.2);
-  padding: 2rem;
-  margin-right: 1rem;
-  border-radius: 10px;
-}
-
-.splash-search-tool:hover {
-  background-color: rgba(200,200,200,0.8);
-  color: black;
-}
-
-.splash-about {
-  background-color: rgba(255,255,255,0.2);
-  padding: 2rem;
-  margin-left: 1rem;
-  border-radius: 10px;
-}
-.splash-about:hover {
+.splash-button:hover {
   background-color: rgba(200,200,200,0.8);
   color: black;
 }
@@ -276,6 +260,10 @@ h2 {
 
   p {
     font-size: 1.2rem;
+  }
+  .splash-welcome {
+    font-size: 3rem;
+ 
   }
 
 }
