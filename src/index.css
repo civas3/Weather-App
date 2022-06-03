@@ -226,7 +226,7 @@ h2 {
   width: 400px !important;
 }
 
-.container-about-us h2, .container-about-us p {
+.container-about-us h2, .container-about-us .faker-lorem {
   color: #f4f4f4;
 }
 
