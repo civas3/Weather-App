@@ -231,8 +231,15 @@ h2 {
   background: url('./assets/lightning-in-the-sea.jpg') no-repeat center center/cover;
 }
 
-.container-about-us img{
+.container-about-us .card{
+  background-color: transparent;
+  border: none;
+  max-width: 700px;
+  margin: auto;
+}
+.container-about-us .card-img-top{
   margin: 25px auto;
+  width: 400px !important;
 }
 
 .container-about-us h2, .container-about-us .faker-lorem {
@@ -251,6 +258,8 @@ h2 {
   text-decoration: none;
   margin: 30px auto 0;
   transition: 0.6s;
+  display: block;
+
 }
 .container-about-us .button:hover{
   background-color: white;
