@@ -1,4 +1,5 @@
 import React from 'react'
+import { faker } from '@faker-js/faker';
 
 const About = () => {
     return (
