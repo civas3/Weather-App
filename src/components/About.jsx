@@ -1,5 +1,5 @@
 import React from 'react'
-// import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 
 const About = () => {
     return (
@@ -10,7 +10,7 @@ const About = () => {
       <img class="card-img-top" alt="purple-beard-logo" src="https://purplebeard.co.uk/wp-content/uploads/2019/07/Finalwhite-300x108.png" width={300}></img>
         <div class="card-body">
           <h2 class="card-title">Welcome to PurpleBeard Weather App</h2>
-          <p class="card-text">Lorem ipsum dolor sit amegula efficitur viverra ut vel sapien. Maecenas a ornare metus. Vivamus sapien quam, tempor congue pretium eget, euismod at est. Ut accumsan imperdiet nisi ac faucibus. Morbi tortor sapien, ultrices in efficitur ut, tempor a erat. Nunc blandit tempor egestas. Vestibulum maximus consequat metus eu vulputate.</p>
+          <p class="card-text">{faker.lorem.lines(15)}</p>
           <a href="https://purplebeard.co.uk/" target={"_blank"} class="btn button btn-lg">Hire a Developer</a>
           <a class="button" href="/">Back</a>
         </div>
